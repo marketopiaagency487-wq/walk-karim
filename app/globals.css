@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0b1420;
+  --color-ink-2: #14273a;
+  --color-ink-3: #24405b;
+  --color-paper: #faf9f7;
+  --color-stone: #e6e1d8;
+  --color-stone-2: #cfc8bb;
+  --color-wood: #a9743c;
+  --color-wood-2: #d8a967;
+  --color-moss: #5a6e4e;
+
+  --font-display: "Noto Kufi Arabic", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-latin: "Archivo", system-ui, sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.num {
+  font-family: var(--font-latin);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
+
+/* ── الشريط: العنصر البصري المميز، مستوحى من البلاطات المنحنية في واجهة المشروع ── */
+.ribbon-rule {
+  position: relative;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-wood) 12%,
+    var(--color-wood) 88%,
+    transparent
+  );
+  opacity: 0.55;
+}
+
+.slab {
+  border-radius: 0 28px 28px 0;
+  border-inline-start: 4px solid var(--color-wood);
+  background: #fff;
+}
+
+.slab-dark {
+  border-radius: 0 28px 28px 0;
+  border-inline-start: 4px solid var(--color-wood-2);
+  background: color-mix(in srgb, var(--color-ink-2) 88%, black);
+}
+
+.eyebrow {
+  font-family: var(--font-latin);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-wood);
+}
+
+.section {
+  padding-block: 88px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: 60px;
+  }
+  html {
+    scroll-padding-top: 72px;
+  }
+}
+
+.wrap {
+  width: min(1180px, 92vw);
+  margin-inline: auto;
+}
+
+/* ── الحركة ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .kenburns {
+    animation: none !important;
+  }
+}
+
+.kenburns {
+  animation: kb 26s ease-in-out infinite alternate;
+}
+
+@keyframes kb {
+  from {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+
+/* ── إمكانية الوصول ── */
+:focus-visible {
+  outline: 3px solid var(--color-wood-2);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+::selection {
+  background: var(--color-wood-2);
+  color: var(--color-ink);
+}
+
+/* شريط سفلي للموبايل — مساحة إضافية أسفل الصفحة */
+@media (max-width: 900px) {
+  body {
+    padding-bottom: 68px;
+  }
+}
