@@ -16,8 +16,10 @@ export default function Gallery() {
             المخطط العام والمناظير المعمارية
           </h2>
           <p className="mt-4 max-w-[60ch] text-[15px] leading-[2] text-ink/70">
-            المشروع مقسّم إلى ست كتل (A – F) حول بلازا مركزية مفتوحة، بحيث تطل
-            كل وحدة على ممر مشاة أو ساحة داخلية — دون وحدات خلفية مغلقة.
+            المشروع مصمم ككتل متداخلة تلتف حول ساحات مفتوحة ونوافير مركزية،
+            بحيث تطل كل وحدة على ممر مشاة أو فناء داخلي — دون وحدات خلفية مغلقة —
+            مع مسطحات خضراء وحمامات سباحة وملاعب على الأسطح، وواجهة كاملة على
+            المحور المركزي.
           </p>
           <div className="ribbon-rule mt-7" />
         </Reveal>
@@ -27,12 +29,12 @@ export default function Gallery() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/masterplan.webp"
-              alt="المخطط العام لمول ووك إن أكتوبر موضحاً عليه الكتل من A إلى F"
+              alt="لقطة جوية علوية للمخطط العام لمول ووك إن أكتوبر وواجهته على المحور المركزي"
               loading="lazy"
               className="w-full object-cover"
             />
             <figcaption className="bg-ink px-5 py-3 text-[12.5px] text-stone-2">
-              المخطط العام — توزيع الكتل حول البلازا المركزية والمسطحات المائية.
+              المخطط العام — توزيع الكتل حول الساحات المركزية والمسطحات الخضراء والمائية.
             </figcaption>
           </figure>
         </Reveal>

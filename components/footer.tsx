@@ -32,7 +32,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-wood-2"
               >
-                واتساب: <span className="num">{site.phone}</span>
+                واتساب: <span className="num">{site.whatsappDisplay}</span>
               </a>
             </li>
             <li>

@@ -80,7 +80,7 @@ export default function ContactForm({ compact = false }: { compact?: boolean }) 
                 className="flex items-center gap-3 text-stone transition-colors hover:text-wood-2"
               >
                 <span className="text-wood-2">واتساب:</span>
-                <span className="num font-semibold">{site.phone}</span>
+                <span className="num font-semibold">{site.whatsappDisplay}</span>
               </a>
             </div>
           </Reveal>

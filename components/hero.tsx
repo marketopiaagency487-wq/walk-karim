@@ -63,7 +63,7 @@ export default function Hero() {
         <p className="mt-5 max-w-[58ch] text-[15px] leading-[2] text-stone md:text-[17px]">
           مول <strong className="font-semibold text-paper">WALK&apos;N</strong>{" "}
           من {site.developer}: 10 أفدنة تجمع المحلات والمكاتب والعيادات والوحدات
-          الفندقية في وجهة واحدة، أمام مستشفى كليوباترا وبجوار بنك التعمير
+          الفندقية في وجهة واحدة، بجانب مستشفى كليوباترا وبجوار بنك التعمير
           والإسكان.
         </p>
 
