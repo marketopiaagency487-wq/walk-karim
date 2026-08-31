@@ -3,16 +3,16 @@ export const site = {
   nameAr: "مول ووك إن أكتوبر",
   developer: "شركة دبي للتطوير العقاري",
   city: "السادس من أكتوبر",
-  url: "https://walkn-october.com",
+  url: "https://dubai-developments.org/",
   phone: "01112286897",
   phoneIntl: "+201112286897",
   whatsapp: "201090595696",
   whatsappDisplay: "01090595696",
   email: "leads@grandeur-spaces.com",
   agency: "Grandeur Spaces",
-  agencyUrl: "https://grandeur-spaces.com",
+  agencyUrl: "https://dubai-developments.org/",
   // ⚠️ ضع مفتاح Web3Forms الخاص بالمشروع هنا
-  web3formsKey: "REPLACE_WITH_WEB3FORMS_ACCESS_KEY",
+  web3formsKey: "1c8ac7a7-ac1e-48fb-8df6-bf3330947f66",
   // ⚠️ ضع Google Ads / GA4 tag هنا
   gtagId: "AW-XXXXXXXXX",
   conversions: {
